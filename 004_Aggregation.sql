@@ -38,8 +38,13 @@ SELECT
 	sum(cast(Radius as float)) / count(*) as 'Average Radius, counting null as zero'
 FROM 
 	Elements
+WHERE
+	len(Symbol) = 2
 group by 
-	Period --, Valenceel;
+	Period --, Valenceel
+having
+	count(*) < 10
+
 --order by
 --	'Average Meltingpoint'
 
