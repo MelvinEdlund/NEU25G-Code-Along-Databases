@@ -4,19 +4,19 @@
 	Blockkommentar
 */
  
--- SQL är case-insensetive d.v.s gör ingen skillnad på små och stora bokstäver.
--- Gäller data såväl som kolumnnamn, variabler etc.
+-- SQL ï¿½r case-insensetive d.v.s gï¿½r ingen skillnad pï¿½ smï¿½ och stora bokstï¿½ver.
+-- Gï¿½ller data sï¿½vï¿½l som kolumnnamn, variabler etc.
  
--- Index börjar på 1.
+-- Index bï¿½rjar pï¿½ 1. 
  
 -- Databas-termer:
--- Selection - Vilka rader vi filtrerar ut (gör med keyword Where)
--- Projection - vilka kolumner vi efterfrågar (görs mellan keyword select och from)
+-- Selection - Vilka rader vi filtrerar ut (gï¿½r med keyword Where)
+-- Projection - vilka kolumner vi efterfrï¿½gar (gï¿½rs mellan keyword select och from)
  
--- Ge oss alla kolumner (Våran selection = *) från alla rader
+-- Ge oss alla kolumner (Vï¿½ran selection = *) frï¿½n alla rader
 --select * from students;
  
----- Använd en where för att filtrera vilka rader vi tar ut, med ett (where-)vilkor.
+---- Anvï¿½nd en where fï¿½r att filtrera vilka rader vi tar ut, med ett (where-)vilkor.
 --select * from students where lastname = 'breuker' and id < 4;
  
 ---- Projection exempel:
@@ -32,27 +32,27 @@
 --from 
 --	students;
 /*
-	string literals använder 'singe quotes' inte "double quotes" som i C#
-	= lika med (istället för == som i C#)
-<> inte lika med (ISO-standard, men i T-SQL även != funkar)
-< mindre än
-> större än
+	string literals anvï¿½nder 'singe quotes' inte "double quotes" som i C#
+	= lika med (istï¿½llet fï¿½r == som i C#)
+<> inte lika med (ISO-standard, men i T-SQL ï¿½ven != funkar)
+< mindre ï¿½n
+> stï¿½rre ï¿½n
 <= mindre eller likamed
->= större eller likamed
+>= stï¿½rre eller likamed
  
 	and (motsvarar C# &&)
 	or (motsvarar C# ||)
 	not (motsvarar C# !)
 */
  
--- väljer vilken databas som är aktiv
+-- vï¿½ljer vilken databas som ï¿½r aktiv
 --use ITHS
  
  
  
 use everyloop
  
--- top begränsar antal rader man får ut.
+-- top begrï¿½nsar antal rader man fï¿½r ut.
 -- select top 10 percent * from users;
  
 -- In
@@ -71,7 +71,7 @@ use everyloop
 -- len = length
 --select firstname from users order by len(firstname)
  
--- Union all, slå ihop från 2 olika tabeller
+-- Union all, slï¿½ ihop frï¿½n 2 olika tabeller
  
 -- case when end (typ som if-sats)
 --select 
